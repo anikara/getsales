@@ -1,0 +1,135 @@
+2021-11-10 06:05:46.616434 (MainThread): Running with dbt=0.21.0
+2021-11-10 06:05:47.905994 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', partial_parse=None, profile=None, profiles_dir='/Users/anikarahman/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', select=None, selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-11-10 06:05:47.911267 (MainThread): Tracking: tracking
+2021-11-10 06:05:47.944683 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba2a210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba2a550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ba2a250>]}
+2021-11-10 06:05:47.982325 (MainThread): Partial parsing not enabled
+2021-11-10 06:05:48.021763 (MainThread): Parsing macros/etc.sql
+2021-11-10 06:05:48.030219 (MainThread): Parsing macros/catalog.sql
+2021-11-10 06:05:48.040028 (MainThread): Parsing macros/adapters.sql
+2021-11-10 06:05:48.076091 (MainThread): Parsing macros/materializations/seed.sql
+2021-11-10 06:05:48.080458 (MainThread): Parsing macros/materializations/view.sql
+2021-11-10 06:05:48.085759 (MainThread): Parsing macros/materializations/table.sql
+2021-11-10 06:05:48.102627 (MainThread): Parsing macros/materializations/copy.sql
+2021-11-10 06:05:48.107504 (MainThread): Parsing macros/materializations/incremental.sql
+2021-11-10 06:05:48.131288 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-11-10 06:05:48.134113 (MainThread): Parsing macros/core.sql
+2021-11-10 06:05:48.140130 (MainThread): Parsing macros/materializations/test.sql
+2021-11-10 06:05:48.151345 (MainThread): Parsing macros/materializations/helpers.sql
+2021-11-10 06:05:48.168004 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-11-10 06:05:48.170979 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-11-10 06:05:48.200068 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-11-10 06:05:48.250292 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-11-10 06:05:48.287584 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-11-10 06:05:48.290604 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-11-10 06:05:48.308147 (MainThread): Parsing macros/materializations/incremental/on_schema_change.sql
+2021-11-10 06:05:48.339866 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-11-10 06:05:48.361838 (MainThread): Parsing macros/materializations/table/table.sql
+2021-11-10 06:05:48.375760 (MainThread): Parsing macros/materializations/view/view.sql
+2021-11-10 06:05:48.388020 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-11-10 06:05:48.395264 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-11-10 06:05:48.397826 (MainThread): Parsing macros/etc/query.sql
+2021-11-10 06:05:48.399525 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-11-10 06:05:48.402097 (MainThread): Parsing macros/etc/datetime.sql
+2021-11-10 06:05:48.416751 (MainThread): Parsing macros/etc/where_subquery.sql
+2021-11-10 06:05:48.419771 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-11-10 06:05:48.423761 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-11-10 06:05:48.426407 (MainThread): Parsing macros/adapters/common.sql
+2021-11-10 06:05:48.516536 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-11-10 06:05:48.519727 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-11-10 06:05:48.522135 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-11-10 06:05:48.525182 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-11-10 06:05:48.880234 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_first_dbt_model".
+2021-11-10 06:05:48.902028 (MainThread): Acquiring new bigquery connection "model.my_new_project.my_second_dbt_model".
+2021-11-10 06:05:48.950000 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-10 06:05:48.952926 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-10 06:05:48.956589 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-10 06:05:48.959721 (MainThread): 'soft_unicode' has been renamed to 'soft_str'. The old name will be removed in MarkupSafe 2.1.
+2021-11-10 06:05:48.987265 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '5665aefd-5114-4afb-adc6-02b2216888d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb71310>]}
+2021-11-10 06:05:49.002977 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-11-10 06:05:49.005943 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '5665aefd-5114-4afb-adc6-02b2216888d2', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb26cd0>]}
+2021-11-10 06:05:49.006598 (MainThread): Found 2 models, 4 tests, 0 snapshots, 0 analyses, 184 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-11-10 06:05:49.008866 (MainThread): 
+2021-11-10 06:05:49.009624 (MainThread): Acquiring new bigquery connection "master".
+2021-11-10 06:05:49.011093 (ThreadPoolExecutor-0_0): Acquiring new bigquery connection "list_my-project-getsales".
+2021-11-10 06:05:49.011723 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-11-10 06:05:55.029809 (ThreadPoolExecutor-0_0): Please log into GCP to continue
+2021-11-10 06:05:55.030744 (ThreadPoolExecutor-0_0): Executing "gcloud --version"
+2021-11-10 06:05:55.057686 (MainThread): Connection 'master' was properly closed.
+2021-11-10 06:05:55.058501 (MainThread): Connection 'list_my-project-getsales' was properly closed.
+2021-11-10 06:05:55.059232 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb8e610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb26850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10bb26490>]}
+2021-11-10 06:05:55.059890 (MainThread): Flushing usage events
+2021-11-10 06:05:55.454560 (MainThread): Encountered an error:
+2021-11-10 06:05:55.455825 (MainThread): Could not find command, ensure it is in the user's PATH: "gcloud"
+2021-11-10 06:05:55.486179 (MainThread): Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 277, in open
+    handle = cls.get_bigquery_client(connection.credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 258, in get_bigquery_client
+    creds = cls.get_bigquery_credentials(profile_credentials)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 218, in get_bigquery_credentials
+    credentials, _ = get_bigquery_defaults(scopes=cls.SCOPE)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 60, in get_bigquery_defaults
+    return google.auth.default(scopes=scopes)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/google/auth/_default.py", line 488, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/clients/system.py", line 435, in run_cmd
+    env=full_env)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 800, in __init__
+    restore_signals, start_new_session)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/subprocess.py", line 1551, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'gcloud': 'gcloud'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/main.py", line 127, in main
+    results, succeeded = handle_and_check(args)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/main.py", line 205, in handle_and_check
+    task, res = run_from_args(parsed)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/main.py", line 258, in run_from_args
+    results = task.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/task/runnable.py", line 452, in run
+    result = self.execute_with_hooks(selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/task/runnable.py", line 410, in execute_with_hooks
+    self.before_run(adapter, selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/task/run.py", line 410, in before_run
+    self.create_schemas(adapter, selected_uids)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/task/runnable.py", line 541, in create_schemas
+    existing_schemas_lowered.update(ls_future.result())
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 428, in result
+    return self.__get_result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/_base.py", line 384, in __get_result
+    raise self._exception
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/utils.py", line 482, in connected
+    return func(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/task/runnable.py", line 518, in list_schemas
+    for s in adapter.list_schemas(database_quoted)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/adapters/bigquery/impl.py", line 200, in list_schemas
+    client = conn.handle
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/contracts/connection.py", line 82, in handle
+    self._handle.resolve(self)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/contracts/connection.py", line 108, in resolve
+    return self.opener(connection)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/adapters/bigquery/connections.py", line 281, in open
+    gcloud.setup_default_credentials()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/clients/gcloud.py", line 23, in setup_default_credentials
+    if gcloud_installed():
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/clients/gcloud.py", line 15, in gcloud_installed
+    run_cmd('.', ['gcloud', '--version'])
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/clients/system.py", line 439, in run_cmd
+    _interpret_oserror(exc, cwd, cmd)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/clients/system.py", line 404, in _interpret_oserror
+    _handle_posix_error(exc, cwd, cmd)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/clients/system.py", line 370, in _handle_posix_error
+    _handle_posix_cmd_error(exc, cwd, cmd)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/dbt/clients/system.py", line 343, in _handle_posix_cmd_error
+    raise dbt.exceptions.ExecutableError(cwd, cmd, message)
+dbt.exceptions.ExecutableError: Could not find command, ensure it is in the user's PATH: "gcloud"
+
